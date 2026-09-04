@@ -1,6 +1,6 @@
 # ⚽ Hypothesis Testing: Are More Goals Scored in Women's Than Men's International Soccer Matches?
 
-**A statistical study of FIFA World Cup matches (2002–present)**
+**A statistical study of FIFA World Cup matches (2002-present)**
 
 ---
 
@@ -22,7 +22,7 @@ Since the sport has changed a lot over time and performance varies significantly
 |---|---|
 | **H₀ (Null)** | The mean number of goals scored in women's matches is **the same as** men's |
 | **H₁ (Alternative)** | The mean number of goals scored in women's matches is **greater than** men's |
-| **Significance level (α)** | 10% (0.1) — one-tailed test |
+| **Significance level (α)** | 10% (0.1) - one-tailed test |
 
 ## 🗂️ Data
 
@@ -46,13 +46,13 @@ New column created: `goals_scored = home_score + away_score` (total goals per ma
 
 Before choosing a statistical test, the distribution of `goals_scored` for each group was inspected using histograms:
 
-**Goals distribution — Men's World Cup (2002–present)**
+**Goals distribution - Men's World Cup (2002–present)**
 Goals per match range from 0–8, with most matches concentrated around 1–3 goals. The distribution is **right-skewed**, not a symmetric bell shape.
 
-**Goals distribution — Women's World Cup (2002–present)**
-Goals per match span a much wider range, 0–13, with a long right tail including matches with 10–13 goals. Also **right-skewed**, but with greater spread and a noticeably higher maximum than men's.
+**Goals distribution - Women's World Cup (2002–present)**
+Goals per match span a much wider range, 0–13, with a long right tail including matches with 10-13 goals. Also **right-skewed**, but with greater spread and a noticeably higher maximum than men's.
 
-➡️ **Early observation:** the maximum goals per match in women's matches (up to 13) is far higher than in men's (up to ~8) — an early visual signal consistent with the initial hypothesis, though this is only a visual observation, not statistical proof yet.
+➡️ **Early observation:** the maximum goals per match in women's matches (up to 13) is far higher than in men's (up to ~8) - an early visual signal consistent with the initial hypothesis, though this is only a visual observation, not statistical proof yet.
 
 **Normality conclusion:** both distributions are **not normal** → a t-test would violate the normality assumption. A non-parametric test is used instead.
 
@@ -139,12 +139,12 @@ print(result_dict)
 
 ## 💡 Insight & Business Interpretation
 
-*(Adjust this section based on your actual p-value — the paragraphs below assume the result is "reject H₀"):*
+*(Adjust this section based on your actual p-value - the paragraphs below assume the result is "reject H₀"):*
 
 1. **Key finding:** There is fairly strong statistical evidence (at α = 10%) that women's FIFA World Cup matches score more goals than men's since 2002.
-2. **Possible drivers (need further data to confirm):** defensive quality that hasn't yet matched men's game at the international level, a more open/attacking style of play, or a larger competitive gap between teams in the women's game — leading to more frequent blow-out scorelines.
-3. **Value for the newsroom:** the "women's soccer is statistically more entertaining" angle now has data behind it rather than just opinion — a solid basis for a data-journalism piece, supported by the histograms and test result as evidence.
-4. **Limitations:** the analysis is limited to one tournament (FIFA World Cup) and one time window (2002–present) — results may not generalize to other competitions (domestic leagues, qualifiers, etc.).
+2. **Possible drivers (need further data to confirm):** defensive quality that hasn't yet matched men's game at the international level, a more open/attacking style of play, or a larger competitive gap between teams in the women's game - leading to more frequent blow-out scorelines.
+3. **Value for the newsroom:** the "women's soccer is statistically more entertaining" angle now has data behind it rather than just opinion - a solid basis for a data-journalism piece, supported by the histograms and test result as evidence.
+4. **Limitations:** the analysis is limited to one tournament (FIFA World Cup) and one time window (2002-present) - results may not generalize to other competitions (domestic leagues, qualifiers, etc.).
 
 ## 🛠️ Tools & Skills Used
 - **Python:** `pandas` (data wrangling), `matplotlib` (EDA/visualization), `pingouin` & `scipy.stats` (non-parametric hypothesis testing)
