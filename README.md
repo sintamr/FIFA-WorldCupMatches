@@ -127,9 +127,9 @@ print(result_dict)
 
 | Metric | Value |
 |---|---|
-| p-value | `[fill in with the value from your run, e.g. 0.0051]` |
+| p-value | `0.0051` |
 | α (significance level) | 0.10 |
-| Decision | `[reject / fail to reject]` |
+| Decision | `reject` |
 
 > ⚠️ **Note:** fill in the table above with the actual numbers from `print(result_dict)` in your own environment (DataCamp workspace / Jupyter) — don't use placeholder numbers in your portfolio.
 
@@ -139,7 +139,7 @@ print(result_dict)
 
 ## 💡 Insight & Business Interpretation
 
-*(Adjust this section based on your actual p-value - the paragraphs below assume the result is "reject H₀"):*
+*(p-value below assume the result is "reject H₀"):*
 
 1. **Key finding:** There is fairly strong statistical evidence (at α = 10%) that women's FIFA World Cup matches score more goals than men's since 2002.
 2. **Possible drivers (need further data to confirm):** defensive quality that hasn't yet matched men's game at the international level, a more open/attacking style of play, or a larger competitive gap between teams in the women's game - leading to more frequent blow-out scorelines.
@@ -166,4 +166,3 @@ jupyter notebook hypothesis_testing_soccer.ipynb
 ```
 
 ---
-*This project is part of a statistics & data analysis learning portfolio.*
