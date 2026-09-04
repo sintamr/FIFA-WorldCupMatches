@@ -124,14 +124,25 @@ print(result_dict)
 ```
 
 ## 📊 Results
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>Goal Distribution Men</h3>
+      <img src="goal%20distribution_man.png" width="400">
+    </td>
+    <td align="center">
+      <h3>Goal Distribution Women</h3>
+      <img src="goal%20distribution_women.png" width="400">
+    </td>
+  </tr>
+</table>
 
+The result from our test:
 | Metric | Value |
 |---|---|
 | p-value | `0.0051` |
 | α (significance level) | 0.10 |
 | Decision | `reject` |
-
-> ⚠️ **Note:** fill in the table above with the actual numbers from `print(result_dict)` in your own environment (DataCamp workspace / Jupyter) — don't use placeholder numbers in your portfolio.
 
 ### How to read the result
 - **If p-value ≤ 0.10** → reject H₀. Statistically, the mean number of goals in women's matches is **significantly higher** than men's at the FIFA World Cup since 2002.
@@ -158,11 +169,3 @@ print(result_dict)
 ├── hypothesis_testing_soccer.ipynb   # analysis notebook
 └── README.md                         # this documentation
 ```
-
-## ▶️ How to Run
-```bash
-pip install pandas matplotlib pingouin scipy
-jupyter notebook hypothesis_testing_soccer.ipynb
-```
-
----
