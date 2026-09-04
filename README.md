@@ -128,7 +128,7 @@ print(result_dict)
   <tr>
     <td align="center">
       <h3>Goal Distribution Men</h3>
-      <img src="goal%20distribution_man.png" width="400">
+      <img src="goal%20distribution_men.png" width="400">
     </td>
     <td align="center">
       <h3>Goal Distribution Women</h3>
